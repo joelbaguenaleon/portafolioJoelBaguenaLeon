@@ -1,0 +1,197 @@
+<title>Joel Baguena Leon</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Sobre mí</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <script src="js/main.js"></script>
+    <script src="js/proyectos.js" defer></script>
+
+    <h1>Proyectos</h1>
+    <section class="proyectos">
+        <div class="proyectos-nav" aria-label="Selector de proyectos">
+            <button class="proyecto-btn active" data-proyecto="chatbot">ChatbotNBA</button>
+            <button class="proyecto-btn" data-proyecto="onlineshop">OnlineShop</button>
+            <button class="proyecto-btn" data-proyecto="nbaguena">NBAguena</button>
+
+        </div>
+
+        <div class="proyectos-panels">
+
+            <article class="proyecto-panel" id="chatbot">
+                <h2>ChatbotNBA</h2>
+                <a href="https://github.com/joelbaguenaleon/chatbootNBA" target="_blank">Ver en GitHub</a>
+
+                <div class="onlineshop-video">
+                    <video controls width="100%" poster="docs/video_chatbot.mp4">
+                        <source src="docs/video_chatbot.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo.
+                    </video>
+                </div>
+
+                <p>
+                    ChatbotNBA es una aplicación de escritorio dedicada a la consulta
+                    de información relacionada con la NBA. La aplicación permite realizar consultas
+                    sobre jugadores, equipos, partidos, clasificaciones y estadísticas mediante un
+                    sistema de chatbot. Este fue mi proyecto de fin de grado.
+                </p>
+
+                <p>
+                    El proyecto utiliza Java Swing para gestionar la interfaz gráfica,
+                    Python y FastAPI para desarrollar el backend y
+                    SQLite para almacenar y consultar información. Además, utiliza
+                    una API externa para obtener datos relacionados con la NBA.
+                </p>
+
+                <h3>Tecnologías utilizadas</h3>
+
+                <ul>
+                    <li>Java</li>
+                    <li>Java Swing</li>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>SQLite</li>
+                    <li>SQL</li>
+                    <li>API REST</li>
+                    <li>JSON</li>
+                    <li>PyInstaller</li>
+                    <li>Launch4j</li>
+                </ul>
+
+                <h3>Funcionalidades principales</h3>
+
+                <ul>
+                    <li>Consulta de jugadores de la NBA.</li>
+                    <li>Consulta de equipos.</li>
+                    <li>Consulta de partidos.</li>
+                    <li>Consulta de clasificaciones.</li>
+                    <li>Consulta de estadísticas.</li>
+                    <li>Procesamiento de consultas mediante detección de palabras clave.</li>
+                    <li>Comunicación entre la interfaz y el backend mediante API REST.</li>
+                    <li>Almacenamiento de información mediante SQLite.</li>
+                    <li>Obtención de información mediante una API externa.</li>
+                    <li>Limpieza de la conversación.</li>
+                    <li>Cierre del backend desde la aplicación.</li>
+                    <li>Ejecución de la aplicación mediante un archivo .exe.</li>
+                </ul>
+
+            </article>
+
+            <article class="proyecto-panel" id="onlineshop" hidden>
+                <h2>OnlineShop</h2>
+
+                <a href="https://github.com/joelbaguenaleon/OnlineShop" target="_blank">Ver en GitHub</a>
+
+                <div class="onlineshop-video">
+                    <video controls width="100%" poster="docs/vista_web.mp4">
+                        <source src="docs/vista_web.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de vídeo.
+                    </video>
+                </div>
+
+                <p>Online Shop es una aplicación web dedicada a la venta de productos de cuidado de la piel.
+                    La aplicación permite consultar productos, buscar por nombre, añadir productos al carrito y
+                    realizar pedidos. Los usuarios registrados pueden consultar su cuenta, ver el historial de
+                    pedidos y cancelar pedidos.</p>
+
+                <p>El proyecto utiliza Laravel para gestionar el backend, las vistas y la conexión con la
+                    base de datos, además de una API para gestionar usuarios, productos, categorías y pedidos.</p>
+
+                <h3>Tecnologías utilizadas</h3>
+
+                <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Blade</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>MySQL</li>
+                    <li>API REST</li>
+                </ul>
+
+                <h3>Funcionalidades principales</h3>
+
+                <ul>
+                    <li>Registro y login de usuarios.</li>
+                    <li>Visualización y búsqueda de productos.</li>
+                    <li>Carrito de compra.</li>
+                    <li>Creación y almacenamiento de pedidos.</li>
+                    <li>Historial y cancelación de pedidos.</li>
+                    <li>Gestión de la cuenta de usuario.</li>
+                    <li>Protección de rutas mediante autenticación.</li>
+                    <li>Diseño de una página principal con vídeo e imágenes.</li>
+                </ul>
+            </article>
+
+            <article class="proyecto-panel" id="nbaguena" hidden>
+                <h2>NBAguena</h2>
+                <a href="https://nbaguena.up.railway.app/" target="_blank">https://nbaguena.up.railway.app</a>
+                <p><a href="https://github.com/joelbaguenaleon/backend_webfinal" target="_blank">Backend en GitHub</a>
+                </p>
+                <p><a href="https://github.com/joelbaguenaleon/front_webfinal" target="_blank">Frontend en GitHub</a>
+                </p>
+                <p>Como aficionado a la NBA que soy desde que comencé a seguirla siempre sentía que las
+                    webs de consulta de información eran algo confusas y incómodas de usar: formatos con estadísticas de
+                    jugadores en horizontal y webs demasiado complejas para hacer consultas simples. Debido a eso me
+                    propuse hacer una web sencilla para poder consultar información NBA usando los conocimientos
+                    adquiridos en anteriores proyectos.</p>
+
+                <p>NBAguena es una aplicación web dedicada a la consulta de información y estadísticas de la NBA. El
+                    proyecto permite consultar partidos, estadísticas de jugadores, comparar jugadores, clasificación y
+                    resultados. La web incluye un chatbot especializado para realizar consultas relacionadas con
+                    equipos,
+                    jugadores, partidos y clasificación. El chatbot reutiliza parte del código del proyecto ChatbotNBA
+                    mejorándolo en algunos aspectos.</p>
+
+                <p>El objetivo principal del proyecto ha sido desarrollar una aplicación full-stack, conectando
+                    diferentes tecnologías y servicios externos dentro de una arquitectura separada entre frontend y
+                    backend.</p>
+
+                <h3>Tecnologías utilizadas</h3>
+                <p>El proyecto está dividido principalmente en dos aplicaciones:</p>
+
+                <h4>Frontend</h4>
+                <ul>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Blade</li>
+                    <li>HTML</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h4>Backend</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>Uvicorn</li>
+                    <li>APIs externas de datos NBA</li>
+                </ul>
+
+                <h4>Despliegue y desarrollo</h4>
+                <ul>
+                    <li>Railway</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Swagger / OpenAPI para probar los endpoints del backend</li>
+                </ul>
+
+            </article>
+
+        </div>
+    </section>
+</body>
