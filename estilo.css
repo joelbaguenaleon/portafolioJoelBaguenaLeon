@@ -129,11 +129,13 @@
 /*configuracion parte de contacto*/
 .contacto-info {
     text-align: center;
-    max-width: 600px;
-    margin: 3rem auto;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
+    padding: 3rem 1rem;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 2rem;
 }
 
 .contacto-info a {
