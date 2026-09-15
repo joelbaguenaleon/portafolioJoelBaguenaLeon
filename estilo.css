@@ -103,7 +103,7 @@
 .sobre-mi {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     padding: 3rem 1rem;
     max-width: 900px;
